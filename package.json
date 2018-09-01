@@ -2,10 +2,15 @@
   "name": "theduck-solidcourse",
   "version": "1.0.0",
   "description": "Demo App",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tsc",
+    "watch": "npx tsc -w"
   },
   "author": "Mauricio Ballesteros",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.3"
+  }
 }
