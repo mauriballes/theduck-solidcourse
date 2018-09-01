@@ -1,5 +1,7 @@
-const world: string = 'World';
-
-export function hello(word: string = world): string {
-    return `Hello, ${word}!`;
+class MainProgram {
+    public static main() {
+        console.log('Hello World!');
+    }
 }
+
+MainProgram.main();
