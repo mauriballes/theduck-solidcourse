@@ -1,0 +1,11 @@
+{
+  "name": "theduck-solidcourse",
+  "version": "1.0.0",
+  "description": "Demo App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mauricio Ballesteros",
+  "license": "MIT"
+}
