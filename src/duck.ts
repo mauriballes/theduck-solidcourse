@@ -5,5 +5,8 @@ export default abstract class Duck {
     public swim() {
         console.log('Swim!');
     }
+    public fly() {
+        console.log('Fly!');
+    }
     public abstract display(): void;
 }

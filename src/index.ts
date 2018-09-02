@@ -12,6 +12,7 @@ class MainProgram {
             duck.display();
             duck.quack();
             duck.swim();
+            duck.fly();
         });
     }
 }
