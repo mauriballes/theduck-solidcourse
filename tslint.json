@@ -10,7 +10,9 @@
             true,
             "single"
         ],
-        "no-console": false
+        "no-console": false,
+        "interface-name": false,
+        "arrow-parens": false
     },
     "rulesDirectory": []
 }
