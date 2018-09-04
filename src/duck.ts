@@ -1,12 +1,29 @@
+import FlyBehavior from './behaviors/flyBehaviors/flyBehavior';
+import QuackBehavior from './behaviors/quackBehaviors/quackBehavior';
+import SwimBehavior from './behaviors/swimBehaviors/swimBehavior';
+
 export default abstract class Duck {
-    public quack() {
-        console.log('Quack!');
+    private flyBehavior: FlyBehavior;
+    private quackBehavior: QuackBehavior;
+    private swimBehavior: SwimBehavior;
+
+    constructor(flyBehavior: FlyBehavior, quackBehavior: QuackBehavior, swimBehavior: SwimBehavior) {
+        this.flyBehavior = flyBehavior;
+        this.quackBehavior = quackBehavior;
+        this.swimBehavior = swimBehavior;
     }
-    public swim() {
-        console.log('Swim!');
+
+    public performFly() {
+        this.flyBehavior.fly();
     }
-    public fly() {
-        console.log('Fly!');
+
+    public performQuack() {
+        this.quackBehavior.quack();
     }
+
+    public performSwim() {
+        this.swimBehavior.swim();
+    }
+
     public abstract display(): void;
 }
