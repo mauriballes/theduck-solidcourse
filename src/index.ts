@@ -1,10 +1,25 @@
 import Duck from './duck';
+
+import DecoyDuck from './decoyDuck';
 import MallardDuck from './mallardDuck';
 import RedheadDuck from './redheadDuck';
+import RubberDuck from './rubberDuck';
 
 class MainProgram {
     public static main() {
-        console.log('Hello Ducks!');
+        const duckPond: Duck[] = [
+            new DecoyDuck(),
+            new MallardDuck(),
+            new RedheadDuck(),
+            new RubberDuck(),
+        ];
+
+        duckPond.forEach(duck => {
+            duck.display();
+            duck.performFly();
+            duck.performQuack();
+            duck.performSwim();
+        });
     }
 }
 
