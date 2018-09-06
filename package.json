@@ -4,6 +4,7 @@
   "description": "Demo App",
   "main": "dist/index.js",
   "scripts": {
+    "start": "npx tsc && node dist/index.js",
     "build": "npx tsc",
     "watch": "npx tsc -w"
   },

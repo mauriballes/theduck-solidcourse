@@ -16,9 +16,7 @@ class MainProgram {
 
         duckPond.forEach(duck => {
             duck.display();
-            duck.performFly();
-            duck.performQuack();
-            duck.performSwim();
+            duck.play();
         });
     }
 }
